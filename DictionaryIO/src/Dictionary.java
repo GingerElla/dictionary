@@ -82,14 +82,12 @@ public class Dictionary {
 	public static void main (String[] args) throws IOException {
 		Scanner in = new Scanner (System.in);
 		
-//		System.out.println("Please input the pathname of the desired dictionary: ");
-//		String dictionary = in.nextLine();
-//		
-//		System.out.println("Please input the name of the file to read from: ");
-//		String file = in.nextLine();
+		System.out.println("Please input the pathname of the desired dictionary: ");
+		String dictionary = in.nextLine();
 		
-		String dictionary = "/Users/Voozell/Desktop/LAT395/Latin.dic";
-		String file = "/Users/Voozell/Desktop/LAT395/Words.txt";
+		System.out.println("Please input the name of the file to read from: ");
+		String file = in.nextLine();
+		
 		int added = addToDictionary(dictionary, file);
 		
 		System.out.println(added + " words added to " + dictionary + " from " + file);
